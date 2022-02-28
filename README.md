@@ -1,7 +1,7 @@
 # gazebo_worlds
 Custom made gazebo worlds
 
-### Run Husarion Office world with Rosbot init in gazebo simulation.
+## Run Husarion Office world with Rosbot init in gazebo simulation.
 Depending on your hardware configuration your docker-compose.yaml file may differ. For Intel and AMD users you will need following docker-compose.yaml configuration:
 ```
 version: "3.9"
@@ -34,7 +34,7 @@ services:
     command: ros2 launch husarion_office_gz husarion_office_world.launch.py
 ```
 
-### Examples
+## Examples
 
 In order to run simulation inside docker you have to give it access to you X11 server and start docker-compose.
 ```
