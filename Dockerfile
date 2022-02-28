@@ -19,10 +19,6 @@ RUN sed -i "82s#.*#            arguments=['-spawn_service_timeout', '60', '-enti
 WORKDIR /gazebo_worlds
 
 RUN source /opt/ros/foxy/setup.bash \
-    && colcon build \
-    && echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc \
-    && echo 'source /gazebo_worlds/install/setup.bash' >> ~/.bashrc \
-    && echo 'source /usr/share/gazebo-11/setup.bash' >> ~/.bashrc \
-    && echo 'export GAZEBO_MODEL_PATH="/usr/share/gazebo-11/../../share/gazebo-11/models:/gazebo_worlds/install/husarion_office_gz/share/husarion_office_gz/worlds/models/"' >> ~/.bashrc
+    && colcon build 
 
 COPY ./ros_entrypoint.sh /
