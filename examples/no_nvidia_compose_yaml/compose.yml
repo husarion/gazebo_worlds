@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  husarion-office:
+    image: husarion_world
+    environment:
+      - "DISPLAY"
+      - "QT_X11_NO_MITSHM=1"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    command: ros2 launch husarion_office_gz husarion_office_world.launch.py
