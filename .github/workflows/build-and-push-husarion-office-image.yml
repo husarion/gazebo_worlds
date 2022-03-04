@@ -7,7 +7,7 @@ on:
       - 'ros_entrypoint.sh'
       - 'Dockerfile'
       - '.github/workflows/build-and-push-husarion-office-image.yml'
-    branches: [ master ]
+    branches: [ master, create-container ]
 
 jobs:
   docker:
