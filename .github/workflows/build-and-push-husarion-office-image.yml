@@ -30,4 +30,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: husarion/husarion-world:latest
+          tags: husarion/husarion-world:foxy
