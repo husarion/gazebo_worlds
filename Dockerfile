@@ -16,6 +16,8 @@ RUN mkdir gazebo_worlds \
 
 COPY ./rosbot_spawn.launch.py /gazebo_worlds/src/rosbot_description/launch/rosbot_spawn.launch.py
 
+WORKDIR /gazebo_worlds
+
 RUN source /opt/ros/foxy/setup.bash \
     && colcon build 
 
