@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   husarion-office:
-    image: husarion_world
+    image: husarion/husarion-world:foxy
     environment:
       - "DISPLAY"
       - "QT_X11_NO_MITSHM=1"
